@@ -1,0 +1,15 @@
+<ul>
+
+<li><a href="/">home</a></li>
+<li><a href="form">form</a></li>
+<li><a href="about">about</a></li>
+
+<li><a href="<%= about_path %>">about_using_path</a></li>
+<li><a href="<%= about_url %>">about_using_url</a></li>
+
+<li><%= link_to 'home_page_by_' %></li>
+
+<%= nav_li 'about_by_nav_li', about_path %>
+
+</ul>
+<hr>

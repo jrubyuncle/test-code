@@ -1,0 +1,27 @@
+<ul>
+
+
+
+<% (1..42).to_a.sample(6).each do |num| %>
+
+  <li> <%= num %> </li>
+
+<% end %>
+
+<br>
+
+<% (1..42).to_a.sample(6).each_with_index do |num, i| %>
+
+  <li> <%= i%> -th <%= num %> </li>
+
+<% end %>
+
+<br>
+
+<% @balls.each_with_index do |num, i| %>
+
+  <li> <%= i%> -th <%= num %> </li>
+
+<% end %>
+
+</ul>

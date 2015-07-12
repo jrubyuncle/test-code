@@ -1,0 +1,9 @@
+<!-- app/views/posts/index.html.erb -->
+
+<h1>List Posts</h1>
+
+<ul>
+  <% @posts.each do |post| %>
+  <li><%= link_to post.title, post_path(post.id) %></li>
+  <% end %>
+</ul>

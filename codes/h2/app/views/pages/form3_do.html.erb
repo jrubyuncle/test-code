@@ -1,0 +1,23 @@
+<h1>Pages#form3_do</h1>
+<p>Find me in app/views/pages/form3_do.html.erb</p>
+
+<h1> your name is : <%= params[:name] %> </h1>
+<h1> your weight is : <%= params[:weight] %> </h1>
+<h1> your height is : <%= params[:height] %> </h1>
+
+<% res = 0 
+weight = params[:weight].to_f
+height = params[:height].to_f
+
+%>
+
+<% res = weight / height ** 2 %>
+<h1> your BMI is : <%= res %> </h1>
+
+<hr>
+<h1>
+hi <%= @name %>
+ , your BMI_from_controller is : <%= @bmi %> 
+</h1>
+
+<%= debug params %>
