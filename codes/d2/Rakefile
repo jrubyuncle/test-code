@@ -1,0 +1,23 @@
+#
+# type 'rake -D'
+# type 'rake rails'
+#
+
+desc "lear Rails!!!"
+
+task "rails" => ["ruby", "http"] do
+  puts "learn rails"
+end
+
+desc "comment"
+task "ruby" do
+  puts "learn ruby"
+end
+
+task "http" => "network" do
+  puts "learn http"
+end
+
+task "network" do
+  puts "learn network"
+end
